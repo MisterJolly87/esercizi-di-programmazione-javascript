@@ -11,3 +11,11 @@
 
   http://www.imparareaprogrammare.it
 */
+var oggi = 2020
+var nascita = 1987
+var obiettivo = 100
+
+var eta = oggi-nascita
+var mancanti = obiettivo-eta
+
+console.log(`Essendo oggi nel ${oggi} ed Essendo Gino nato nel ${nascita}, vuol dire che ha ${eta} anni e gli mancano ${mancanti} anni per raggiungere i ${obiettivo} anni`);
