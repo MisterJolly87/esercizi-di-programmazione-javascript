@@ -13,4 +13,15 @@
   http://www.imparareaprogrammare.it
 */
 
-var time = 0;
+var time = 45683967392092;
+
+var ore = time/3600
+var oreInt = Math.ceil(ore)-1
+
+var minuti = (ore-oreInt)*3600/60
+var minutiInt = Math.ceil(minuti)-1
+
+var secondi = (minuti-minutiInt)*60
+var secondiInt = Math.ceil(secondi)-1
+
+console.log(`${oreInt} ore, ${minutiInt} minuti e ${secondiInt} secondi`);
