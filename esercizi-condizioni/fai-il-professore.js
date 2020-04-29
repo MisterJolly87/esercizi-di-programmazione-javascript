@@ -18,3 +18,45 @@
 
   http://www.imparareaprogrammare.it
 */
+var v = 24
+
+console.log(`Dato il voto ${v} dello studente, a che giudizio corrisponde?`);
+
+if (v < 18) {
+  console.log(`Il voto dello studente è insufficiente`);
+} else if (v >= 18 && v < 21) {
+  console.log(`Il voto dello studente è sufficiente`);
+} else if (v >= 21 && v < 24) {
+  console.log(`Il voto dello studente è buono`);
+} else if (v >= 24 && v < 27) {
+  console.log(`Il voto dello studente è distinto`);
+} else if (v >= 27 && v <= 29) {
+  console.log(`Il voto dello studente è ottimo`);
+} else if (v == 30) {
+  console.log(`Il voto dello studente è eccellente`);
+} else {
+  console.log('Il voto è sbagliato, perchè fuori scala');
+}
+
+var v = 30
+console.log(`Il voto del secondo studente è ${v}`);
+
+switch (v) {
+  case v >= 18 && v < 21 :
+    console.log(`Il voto dello studente è insufficiente`);
+    break;
+  case v >= 21 && v < 24:
+  console.log(`Il voto dello studente è buono`);
+    break;
+  case v >= 24 && v < 27:
+  console.log(`Il voto dello studente è distinto`);
+    break;
+  case v >= 27 && v <= 29:
+  console.log(`Il voto dello studente è ottimo`);
+    break;
+  case v = 30:
+  console.log(`Il voto dello studente è eccellente`);
+    break;
+  default:
+    console.log('Il voto è sbagliato, perchè fuori scala');
+}
